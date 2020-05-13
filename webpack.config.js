@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, 'src'),
@@ -19,6 +20,7 @@ const getPlugins = () => {
                 viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
             }
         }),
+        new CleanWebpackPlugin()
     ];
 
     return plugins;

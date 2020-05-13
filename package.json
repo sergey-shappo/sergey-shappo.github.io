@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-run": "webpack-dev-server"
+    "dev-run": "webpack-dev-server",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.0.4",
     "raw-loader": "^4.0.1",
