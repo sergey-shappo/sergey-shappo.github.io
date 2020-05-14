@@ -1,0 +1,8 @@
+.tree {
+    margin-top: 100px;
+}
+.containerGeneration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

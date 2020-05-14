@@ -15,7 +15,7 @@ const Person = ({id, top, left}) => {
     } = new PersonConfig(gedcomService.results[id]);
 
     return (
-        <div className={`${styles.personBox} ${styles.disableSelection} ${position['left' + left]} ${position['top' + top]}`}>
+        <div id={id} className={`${styles.personBox} ${styles.disableSelection} ${position['left' + left]} ${position['top' + top]}`}>
             <div className={styles.personLine}>{firstName}</div>
             <div className={`${styles.personLine} ${styles.hidded}`}>{middleName}</div>
             <div className={styles.personLine}>{lastName}</div>
