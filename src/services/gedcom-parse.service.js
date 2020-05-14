@@ -1,4 +1,4 @@
-import gedcom from '../assets/111.ged';
+import gedcom from '../assets/001.ged';
 
 export class GedcomParseService {
 
