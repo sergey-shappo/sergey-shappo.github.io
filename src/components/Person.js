@@ -5,7 +5,7 @@ import position from './App.module.css';
 import { gedcomService } from "../services/gedcom-parse.service";
 import { PersonConfig } from "../utils/PersonConfig";
 
-const Person = ({id, top, left}) => {
+const Person = ({id, top, left, hideIndex}) => {
     const {
         firstName,
         middleName,
@@ -15,7 +15,7 @@ const Person = ({id, top, left}) => {
     } = new PersonConfig(gedcomService.results[id]);
 
     return (
-        <div id={id} className={`${styles.personBox} ${styles.disableSelection} ${position['left' + left]} ${position['top' + top]}`}>
+        <div id={id} className={`${styles.personBox} ${styles.disableSelection} ${'hide' + hideIndex} ${position['left' + left]} ${position['top' + top]}`}>
             <div className={styles.personLine}>{firstName}</div>
             <div className={`${styles.personLine} ${styles.hidded}`}>{middleName}</div>
             <div className={styles.personLine}>{lastName}</div>

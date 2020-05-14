@@ -4,44 +4,44 @@ import { ChildrenGroup } from "./ChildrenGroup";
 import styles from './Tree.module.css';
 
 const f1 = [
-        {id: 'I178', top: 1, left: 1},
-        {id: 'I185', top: 1, left: 2},
-        {id: 'I186', top: 1, left: 3},
-        {id: 'I213', top: 1, left: 4},
-        {id: 'I224', top: 1, left: 5},
-        {id: 'I225', top: 1, left: 6},
-        {id: 'I43', top: 1, left: 7},
+        {id: 'I178', hideIndex: 7, top: 1, left: 1},
+        {id: 'I185', hideIndex: 6, top: 1, left: 2},
+        {id: 'I186', hideIndex: 5, top: 1, left: 3},
+        {id: 'I213', hideIndex: 4, top: 1, left: 4},
+        {id: 'I224', hideIndex: 3, top: 1, left: 5},
+        {id: 'I225', hideIndex: 2, top: 1, left: 6},
+        {id: 'I43', hideIndex: 1, top: 1, left: 7},
 ];
 const f2 = [
-        {id: 'I12', top: 1, left: 9},
-        {id: 'I183', top: 1, left: 10},
-        {id: 'I202', top: 1, left: 11},
+        {id: 'I12', hideIndex: 1, top: 1, left: 9},
+        {id: 'I183', hideIndex: 2, top: 1, left: 10},
+        {id: 'I202', hideIndex: 3, top: 1, left: 11},
 ];
 const f3 = [
-        {id: 'I208', top: 1, left: 13},
-        {id: 'I44', top: 1, left: 14},
+        {id: 'I208', hideIndex: 2, top: 1, left: 13},
+        {id: 'I44', hideIndex: 1, top: 1, left: 14},
 ];
 const f4 = [
-        {id: 'I15', top: 1, left: 16},
-        {id: 'I58', top: 1, left: 17},
+        {id: 'I15', hideIndex: 1, top: 1, left: 16},
+        {id: 'I58', hideIndex: 2, top: 1, left: 17},
 ];
 const f5 = [
-        {id: 'I132', top: 1, left: 19},
-        {id: 'I67', top: 1, left: 20},
+        {id: 'I132', hideIndex: 2, top: 1, left: 19},
+        {id: 'I67', hideIndex: 1, top: 1, left: 20},
 ];
 const f6 = [
-        {id: 'I66', top: 1, left: 22},
-        {id: 'I103', top: 1, left: 23},
-        {id: 'I104', top: 1, left: 24},
+        {id: 'I66', hideIndex: 1, top: 1, left: 22},
+        {id: 'I103', hideIndex: 2, top: 1, left: 23},
+        {id: 'I104', hideIndex: 3, top: 1, left: 24},
 ];
 const f7 = [
-        {id: 'I110', top: 1, left: 26},
-        {id: 'I53', top: 1, left: 27},
+        {id: 'I110', hideIndex: 2, top: 1, left: 26},
+        {id: 'I53', hideIndex: 1, top: 1, left: 27},
 ];
 const f8 = [
-        {id: 'I14', top: 1, left: 29},
-        {id: 'I56', top: 1, left: 30},
-        {id: 'I57', top: 1, left: 31},
+        {id: 'I14', hideIndex: 1, top: 1, left: 29},
+        {id: 'I56', hideIndex: 2, top: 1, left: 30},
+        {id: 'I57', hideIndex: 3, top: 1, left: 31},
 ];
 
 export const Tree = () => {
