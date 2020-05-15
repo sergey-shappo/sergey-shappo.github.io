@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Person.module.css';
-import position from './App.module.css';
 
 import { gedcomService } from "../services/gedcom-parse.service";
 import { PersonConfig } from "../utils/PersonConfig";
@@ -17,7 +16,7 @@ const Person = ({id, top, left, hideIndex}) => {
     return (
         <div className={`${'hide' + hideIndex} ${styles.personBoxWrapper}`}>
             <div id={id}
-                 className={`${styles.personBox} ${styles.disableSelection} ${'hide' + hideIndex} ${position['left' + left]} ${position['top' + top]}`}>
+                 className={`${styles.personBox} ${styles.disableSelection} ${'hide' + hideIndex}`}>
                 <div className={styles.personLine}>{firstName}</div>
                 <div className={`${styles.personLine} ${styles.hidded}`}>{middleName}</div>
                 <div className={styles.personLine}>{lastName}</div>
