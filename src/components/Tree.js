@@ -4,97 +4,120 @@ import { ChildrenGroup } from "./ChildrenGroup";
 import styles from './Tree.module.css';
 
 const f1 = [
-        {id: 'I178', hideIndex: 7, top: 1, left: 1},
-        {id: 'I185', hideIndex: 6, top: 1, left: 2},
-        {id: 'I186', hideIndex: 5, top: 1, left: 3},
-        {id: 'I213', hideIndex: 4, top: 1, left: 4},
-        {id: 'I224', hideIndex: 3, top: 1, left: 5},
-        {id: 'I225', hideIndex: 2, top: 1, left: 6},
-        {id: 'I43', hideIndex: 1, top: 1, left: 7},
+        {id: 'I178', hideIndex: 7 },
+        {id: 'I185', hideIndex: 6 },
+        {id: 'I186', hideIndex: 5 },
+        {id: 'I213', hideIndex: 4 },
+        {id: 'I224', hideIndex: 3 },
+        {id: 'I225', hideIndex: 2 },
+        {id: 'I43', hideIndex: 1 },
 ];
 const f2 = [
-        {id: 'I12', hideIndex: 1, top: 1, left: 9},
-        {id: 'I183', hideIndex: 2, top: 1, left: 10},
-        {id: 'I202', hideIndex: 3, top: 1, left: 11},
+        {id: 'I12', hideIndex: 1 },
+        {id: 'I183', hideIndex: 2 },
+        {id: 'I202', hideIndex: 3 },
 ];
 const f3 = [
-        {id: 'I208', hideIndex: 2, top: 1, left: 13},
-        {id: 'I44', hideIndex: 1, top: 1, left: 14},
+        {id: 'I208', hideIndex: 2 },
+        {id: 'I44', hideIndex: 1 },
 ];
 const f4 = [
-        {id: 'I15', hideIndex: 1, top: 1, left: 16},
-        {id: 'I58', hideIndex: 2, top: 1, left: 17},
+        {id: 'I15', hideIndex: 1 },
+        {id: 'I58', hideIndex: 2 },
 ];
 const f5 = [
-        {id: 'I132', hideIndex: 2, top: 1, left: 19},
-        {id: 'I67', hideIndex: 1, top: 1, left: 20},
+        {id: 'I132', hideIndex: 2 },
+        {id: 'I67', hideIndex: 1 },
 ];
 const f6 = [
-        {id: 'I66', hideIndex: 1, top: 1, left: 22},
-        {id: 'I103', hideIndex: 2, top: 1, left: 23},
-        {id: 'I104', hideIndex: 3, top: 1, left: 24},
+        {id: 'I66', hideIndex: 1 },
+        {id: 'I103', hideIndex: 2 },
+        {id: 'I104', hideIndex: 3 },
 ];
 const f7 = [
-        {id: 'I110', hideIndex: 2, top: 1, left: 26},
-        {id: 'I53', hideIndex: 1, top: 1, left: 27},
+        {id: 'I110', hideIndex: 2 },
+        {id: 'I53', hideIndex: 1 },
 ];
 const f8 = [
-        {id: 'I14', hideIndex: 1, top: 1, left: 29},
-        {id: 'I56', hideIndex: 2, top: 1, left: 30},
-        {id: 'I57', hideIndex: 3, top: 1, left: 31},
+        {id: 'I14', hideIndex: 1 },
+        {id: 'I56', hideIndex: 2 },
+        {id: 'I57', hideIndex: 3 },
+];
+const f9 = [
+        {id: 'I184', hideIndex: 4 },
+        {id: 'I136', hideIndex: 3 },
+        {id: 'I137', hideIndex: 2 },
+        {id: 'I8', hideIndex: 1 },
+];
+const f10 = [
+        {id: 'I9', hideIndex: 1 },
+        {id: 'I59', hideIndex: 2 },
+        {id: 'I60', hideIndex: 3 },
+];
+const f11 = [
+        {id: 'I105', hideIndex: 2 },
+        {id: 'I10', hideIndex: 1 },
+];
+const f12 = [
+        {id: 'I11', hideIndex: 1 },
+        {id: 'I45', hideIndex: 2 },
+        {id: 'I46', hideIndex: 3 },
+        {id: 'I47', hideIndex: 4 },
+        {id: 'I48', hideIndex: 5 },
+        {id: 'I98', hideIndex: 6 },
+];
+const f13 = [
+        {id: 'I18', hideIndex: 5 },
+        {id: 'I21', hideIndex: 4 },
+        {id: 'I20', hideIndex: 3 },
+        {id: 'I19', hideIndex: 2 },
+        {id: 'I7', hideIndex: 1 },
+];
+const f14 = [
+        {id: 'I6', hideIndex: 1 },
+        {id: 'I16', hideIndex: 2 },
+        {id: 'I17', hideIndex: 3 },
+];
+const f15 = [
+        {id: 'I13', hideIndex: 2 },
+        {id: 'I5', hideIndex: 1 },
+];
+const f16 = [
+        {id: 'I180', hideIndex: 2 },
 ];
 
 export const Tree = () => {
         return (
             <div className={styles.tree}>
                 <div className={styles.containerGeneration}>
-                    <ChildrenGroup children={f1} isReverse={false}/>
-                    <ChildrenGroup children={f2} isReverse={true} />
-                    <ChildrenGroup children={f3} isReverse={false} />
-                    <ChildrenGroup children={f4} isReverse={true} />
-                    <ChildrenGroup children={f5} isReverse={false} />
-                    <ChildrenGroup children={f6} isReverse={true} />
-                    <ChildrenGroup children={f7} isReverse={false}  />
-                    <ChildrenGroup children={f8} isReverse={true} />
+                    <ChildrenGroup children={f1}/>
+                    <ChildrenGroup children={f2} />
+                    <ChildrenGroup children={f3} />
+                    <ChildrenGroup children={f4} />
+                    <ChildrenGroup children={f5} />
+                    <ChildrenGroup children={f6} />
+                    <ChildrenGroup children={f7}  />
+                    <ChildrenGroup children={f8} />
                 </div>
 
+                <div className={styles.containerGeneration}>
+                    <ChildrenGroup children={f9}/>
+                    <ChildrenGroup children={f10}/>
+                    <ChildrenGroup children={f11}/>
+                    <ChildrenGroup children={f12}/>
+                </div>
 
+                <div className={styles.containerGeneration}>
+                    <ChildrenGroup children={f13}/>
+                    <ChildrenGroup children={f14}/>
+                </div>
 
-                    <Person id="I184" top={2} left={7}/>
-                    <Person id="I136" top={2} left={8}/>
-                    <Person id="I137" top={2} left={9}/>
-                    <Person id="I8" top={2} left={10}/>
-
-                    <Person id="I9" top={2} left={12}/>
-                    <Person id="I59" top={2} left={14}/>
-                    <Person id="I60" top={2} left={16}/>
-
-                    <Person id="I105" top={2} left={20}/>
-                    <Person id="I10" top={2} left={22}/>
-
-                    <Person id="I11" top={2} left={24}/>
-                    <Person id="I45" top={2} left={25}/>
-                    <Person id="I46" top={2} left={26}/>
-                    <Person id="I47" top={2} left={27}/>
-                    <Person id="I48" top={2} left={28}/>
-                    <Person id="I98" top={2} left={29}/>
-
-
-                    <Person id="I18" top={3} left={5}/>
-                    <Person id="I21" top={3} left={8}/>
-                    <Person id="I20" top={3} left={11}/>
-                    <Person id="I19" top={3} left={14}/>
-                    <Person id="I7" top={3} left={17}/>
-
-                    <Person id="I6" top={3} left={19}/>
-                    <Person id="I16" top={3} left={23}/>
-                    <Person id="I17" top={3} left={27}/>
-
-
-                    <Person id="I13" top={4} left={17}/>
-                    <Person id="I5" top={4} left={19}/>
-
-                    <Person id="I180" top={5} left={19}/>
+                <div className={styles.containerGeneration}>
+                    <ChildrenGroup children={f15}/>
+                </div>
+                <div className={styles.containerGeneration}>
+                    <ChildrenGroup children={f16}/>
+                </div>
             </div>
         );
 };

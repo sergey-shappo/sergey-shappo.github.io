@@ -15,7 +15,7 @@ const Person = ({id, top, left, hideIndex}) => {
     } = new PersonConfig(gedcomService.results[id]);
 
     return (
-        <div className={styles.personBoxWrapper}>
+        <div className={`${'hide' + hideIndex} ${styles.personBoxWrapper}`}>
             <div id={id}
                  className={`${styles.personBox} ${styles.disableSelection} ${'hide' + hideIndex} ${position['left' + left]} ${position['top' + top]}`}>
                 <div className={styles.personLine}>{firstName}</div>

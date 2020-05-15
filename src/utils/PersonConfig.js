@@ -12,10 +12,10 @@ export class PersonConfig {
 
         const NAME = data?.NAME?.split(' ');
         const GIVN = data?.GIVN?.split(' ');
-        this.firstName = NAME[0] || GIVN[0];
-        this.middleName = NAME[1];
-        this.lastName = NAME[2];
-        this.maidenName = NAME[3];
+        this.firstName = NAME ? NAME[0] : GIVN ? GIVN[0] : '';
+        this.middleName = NAME ? NAME[1] : '';
+        this.lastName = NAME ? NAME[2] : '';
+        this.maidenName = NAME ? NAME[3] : '';
 
         this.familyAsChild = data?.FAMC;
         this.familyAsSpouse  = data?.FAMS;
