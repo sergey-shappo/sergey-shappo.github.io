@@ -67,7 +67,7 @@ const f12 = [
         {id: 'I98', hideIndex: 6 },
 ];
 const f13 = [
-        {id: 'I18', hideIndex: 2 },
+        {id: 'I18', hideIndex: 1 },
         {id: 'I21', hideIndex: 1 },
         {id: 'I20', hideIndex: 1 },
         {id: 'I19', hideIndex: 1 },
